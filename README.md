@@ -1,6 +1,6 @@
 ## 博客
 
-测试站点：[www.54tianzhisheng.cn](http://www.54tianzhisheng.cn/)
+测试站点：[www.zuobin.com.cn](http://www.zuobin.com.cn/)
 
 本博客使用 Github Page + Hexo 搭建的，主题采用的是 [**yilia**](https://github.com/litten/hexo-theme-yilia) ，在此感谢作者 [litten](https://github.com/litten) 。
 
@@ -48,7 +48,7 @@ menu:
 
 # SubNav
 subnav:
-  github: "https://github.com/zhisheng17/"
+  github: "https://github.com/zuobin1996/"
   #weibo: "#"
   zhihu: "https://www.zhihu.com/people/tian-zhisheng/activities"
   #qq: "#"
@@ -58,7 +58,7 @@ subnav:
   segmentfault: "https://segmentfault.com/u/yuanblog"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "zhisheng2018@gmail.com"
+  #mail: "zuobin1996@qq.com"
   #rss: "atom.xml"
   #facebook: "#"
   #google: "#"
