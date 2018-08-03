@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>告白气球</title>
+<style type="text/css">
+/* #qiqiu1{
+		width:200px;
+		height:200px;
+		background:orange;
+		border-radius:50% ;
+		<!--定位-->
+		position:absolute;
+		left:200px;
+		top:100px;
+}
+*/
+html, body {
+	width: 100%;
+	height: 100%;
+	background: black;
+}
 
+div {
+	border-radius: 50%;
+	position: absolute;
+}
+
+</style>
+</head>
+<body>
+	<!-- 目标	   实现彩色气球 位置随机 大小随机 颜色随机
+	第一步：如何实现1个气球
+	
+	第二步：对象的开发思维,封装成一个构造函数
+		HTML CSS JavaScript
+		 属性:
+		 -放置气球的容器div
+		 -气球的半径r
+		 -气球的颜色bg
+		 -气球的位置left/top
+		 -气球运动的速度speedX/speedY
+		 方法：
+		 -drowCircle
+		 -run
+		 
+		 全栈开发 15k起
+		 前端
+		 后台
+		 
+		 动静分离
+	
+	第三步：
+	
+	-->
+
+	<!-- 当成一个容器,放气球块级元素 -->
+	<!-- 	<div id="qiqiu1"></div>
+	<div id="qiqiu2"></div> -->
+	<!-- 加入背景音乐 -->
+	<audio src="music/王北车-陷阱.mp3" autoplay loop></audio>
+	<!-- 引入外部JS文件 -->
+	<script type="text/javascript" src="js/circle.js"></script>
+	<script type="text/javascript">
+		for (var i = 0; i < 20; i++) {
+			//创建一个气球对象
+			var c = new Circle();
+			//调用画气球的方法
+			c.drawCircle(document.body);
+			//动起来
+			c.run();
+		}
+
+		//创建5个照片
+/* 		var imgs = new Array(
+			'a1.jpg',
+			'a2.jpg',
+			'a3.jpg',
+			'a4.jpg',
+			'a5.jpg',
+		)
+		
+		var i = 0;
+		var t = setInterval(function(){
+			var c = new Circle('url(img/'+imgs[i]+')');
+			c.drawCircle(document.body);
+			c.run();
+			console.log(i);
+			if(i==4){
+				window.clearInterval(t);
+			}
+			i++;
+		},2000); */
+/* 		var imgs = document.getElementsByTagName('img')
+		setInterval(
+		function() {
+			//创建一个气球对象
+			var c = new Circle();
+			//调用画气球的方法
+			c.drawCircle(document.body);
+			//动起来
+			c.run();
+		var rand = Math.ceil(Math.random() * 10);
+		imgs[0].src = "img/a"+Math.round(Math.random()*4+1)+".jpg";
+		}, 2000); */
+	</script>
+		<!-- <img alt="" src="img/a1.jpg"> -->
+</body>
+</html>
